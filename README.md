@@ -8,7 +8,7 @@ Getting Started
 
 Download the main.py to your Coursera Video And srt path , File Tree Like:
 
-.. code-block:: bash
+
 
     $Folder
     $ |--main.py
