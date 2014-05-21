@@ -16,7 +16,6 @@ Download the main.py to your Coursera Video And srt path , File Tree Like:
     $ |--srt File
 
 And run:
-.. code-block:: bash
 
     $ python main.py
 or
