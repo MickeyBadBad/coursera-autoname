@@ -8,11 +8,12 @@ Getting Started
 
 Download the main.py to your Coursera Video And srt path , Like:
 
-Folder
-  !__main.py
-  !__Video File
-  !__srt File
-  
+.. code-block:: pycon
+#Folder
+#  !__main.py
+#  !__Video File
+#  !__srt File
+
 And run:
   python main.py
     or
