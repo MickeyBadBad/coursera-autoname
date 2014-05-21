@@ -6,6 +6,7 @@ filelist = os.listdir(os.getcwd())
 srtlist = []
 mp4list = []
 def name(srtlist=srtlist,mp4list=mp4list):
+#find .srt and .mp4 file and append on list
 	for i in filelist:
 		x = re.match(r'.*[.]srt',i)
 		if x != None:
@@ -21,6 +22,8 @@ def name(srtlist=srtlist,mp4list=mp4list):
 	return srtlist,mp4list
 
 def rmsame(filelist=filelist):
+#remove same name !
+#some video file can be download with right name , remove the video and srt file on list
 	for i in mp4list:
 		for j in srtlist:
 			if i[:-4] == j[:-4]:
@@ -32,6 +35,7 @@ def rmsame(filelist=filelist):
 	return mp4list,srtlist
 
 def rename(filelist=filelist,srtlit=srtlist,mp4list=mp4list):
+#change Video File name use srt file name 
 	if len(srtlist) == 0:
 		print 'No file name is change !'
 	else:
@@ -42,7 +46,7 @@ def rename(filelist=filelist,srtlit=srtlist,mp4list=mp4list):
 
 if __name__ == '__main__':
 	name()
-	for i in range(10):
+	for i in range(10):		#rmsame() sometime can't remove all same name ,so loop in here
 		rmsame()
 	rename()
 	if raw_input('press any key to continue:'):
