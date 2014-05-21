@@ -1,7 +1,7 @@
 Coursera-AutoName
 =================
 
-Auto Rename Download By IDM Coursera Video And Srt File Name !
+Auto Rename Coursera Video And Srt Filename Download By IDM(Internet Download Manager) ! 
 
 Getting Started
 =================
